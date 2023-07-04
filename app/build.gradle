@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.dailyjournalappproject'
+    namespace 'com.example.dailyjournalapp'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.dailyjournalappproject"
+        applicationId "com.example.dailyjournalapp"
         minSdk 26
         targetSdk 33
         versionCode 1

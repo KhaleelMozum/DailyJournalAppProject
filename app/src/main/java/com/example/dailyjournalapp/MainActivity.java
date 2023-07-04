@@ -1,4 +1,4 @@
-package com.example.dailyjournalappproject;
+package com.example.dailyjournalapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
