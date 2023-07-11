@@ -10,5 +10,7 @@ public class material_activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_material);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 }

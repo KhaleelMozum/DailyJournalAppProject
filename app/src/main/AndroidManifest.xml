@@ -13,13 +13,19 @@
         android:theme="@style/Theme.DailyJournalApp"
         tools:targetApi="31">
         <activity
+            android:name=".JournalEdit"
+            android:exported="false" />
+        <activity
             android:name=".DailyCalendarActivity"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".material_activity"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".times_activity"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

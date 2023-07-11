@@ -20,6 +20,7 @@ public class times_activity extends AppCompatActivity implements View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_times2);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         masjid = findViewById(R.id.masjid);
         fajr = findViewById(R.id.fajrTime);
