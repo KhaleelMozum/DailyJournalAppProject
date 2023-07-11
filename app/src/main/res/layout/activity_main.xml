@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/gradient_1"
     tools:context=".MainActivity">
 
     <Button
@@ -135,7 +136,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/calendarRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="550dp" />
+        android:layout_height="510dp" />
 
 
     <LinearLayout
@@ -146,7 +147,7 @@
         <Button
             android:id="@+id/button8"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_weight="1"
             android:onClick="launchtimes"
             android:text="@string/times" />
@@ -154,7 +155,7 @@
         <Button
             android:id="@+id/button9"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_weight="1"
             android:onClick="launchmaterial"
             android:text="@string/material" />

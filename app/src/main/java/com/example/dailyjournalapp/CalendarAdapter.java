@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -37,10 +38,14 @@ class CalendarAdapter extends RecyclerView.Adapter<CalendarViewHolder>
         return new CalendarViewHolder(view, onItemListener, days);
     }
 
+    public boolean indicator;
+
     @Override
     public void onBindViewHolder(@NonNull CalendarViewHolder holder, int position)
     {
+
         final LocalDate date = days.get(position);
+
 
         holder.dayOfMonth.setText(String.valueOf(date.getDayOfMonth()));
 
@@ -51,6 +56,11 @@ class CalendarAdapter extends RecyclerView.Adapter<CalendarViewHolder>
             holder.dayOfMonth.setTextColor(Color.BLACK);
         else
             holder.dayOfMonth.setTextColor(Color.LTGRAY);
+
+        //indicator = Journal.isIndicator();
+        //if(indicator){
+            //holder.parentView.setBackgroundColor(Color.GREEN);
+        //}
     }
 
     @Override

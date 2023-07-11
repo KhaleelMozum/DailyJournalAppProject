@@ -17,7 +17,7 @@ public class JournalEdit extends AppCompatActivity
     private CheckBox asr;
     private CheckBox maghrib;
     private CheckBox isha;
-
+    private boolean indicator;
     private LocalTime time;
 
     private boolean one;
@@ -56,6 +56,9 @@ public class JournalEdit extends AppCompatActivity
             four = true;
         if(isha.isChecked())
             five = true;
+        if (fajr.isChecked() && zuhr.isChecked() && asr.isChecked() && maghrib.isChecked() && isha.isChecked()){
+            indicator = true;
+        }
     }
 
 
@@ -64,7 +67,7 @@ public class JournalEdit extends AppCompatActivity
     {
         String JournalName = editJournal.getText().toString();
         check();
-        Journal newJournal = new Journal(JournalName, CalendarUtils.selectedDate,one,two,three,four,five);
+        Journal newJournal = new Journal(JournalName, CalendarUtils.selectedDate,one,two,three,four,five,indicator);
         Journal.JournalsList.add(newJournal);
         finish();
     }

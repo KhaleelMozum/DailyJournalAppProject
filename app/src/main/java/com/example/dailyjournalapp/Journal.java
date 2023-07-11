@@ -34,7 +34,8 @@ public class Journal {
     private LocalDate date;
     private LocalTime time;
 
-    public Journal(String personal, LocalDate date, boolean fajr,boolean zuhr,boolean asr,boolean maghrib,boolean isha)
+    private boolean indicator;
+    public Journal(String personal, LocalDate date, boolean fajr,boolean zuhr,boolean asr,boolean maghrib,boolean isha, boolean indicator)
     {
         this.personal = personal;
         this.date = date;
@@ -43,6 +44,7 @@ public class Journal {
         this.asr = asr;
         this.maghrib = maghrib;
         this.isha = isha;
+        this.indicator = indicator;
     }
 
 
@@ -108,5 +110,13 @@ public class Journal {
 
     public void setAsr(boolean asr) {
         this.asr = asr;
+    }
+
+    public boolean isIndicator() {
+        return indicator;
+    }
+
+    public void setIndicator(boolean indicator) {
+        this.indicator = indicator;
     }
 }

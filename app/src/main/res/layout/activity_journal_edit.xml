@@ -5,55 +5,67 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/gradient_1"
     tools:context=".JournalEdit">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:layout_weight="0"
+        android:text="What prayers did you finish today?" />
 
     <CheckBox
         android:id="@+id/checkBox10"
         android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:layout_weight="0"
         android:text="@string/fajr" />
 
     <CheckBox
         android:id="@+id/checkBox9"
         android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:layout_weight="0"
         android:text="@string/zuhr" />
 
     <CheckBox
         android:id="@+id/checkBox8"
         android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:layout_weight="0"
         android:text="@string/asr" />
 
     <CheckBox
         android:id="@+id/checkBox7"
         android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:layout_weight="0"
         android:text="@string/maghrib" />
 
     <CheckBox
         android:id="@+id/checkBox6"
         android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:layout_marginBottom="70dp"
         android:text="@string/isha" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:textAlignment="center"
         android:text="What good deed did you do today?" />
 
     <EditText
         android:id="@+id/editJournalText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_weight="0"
         android:ems="10"
         android:inputType="text"
         android:text="" />
